@@ -19,7 +19,7 @@ class EightBall extends StatefulWidget {
 }
 
 class _EightBallState extends State<EightBall> {
-  int ballNumber = 0;
+  int ballNumber = Random().nextInt(5) + 1;
   void changeBall() {
     setState(() {
       ballNumber = Random().nextInt(5) + 1;
